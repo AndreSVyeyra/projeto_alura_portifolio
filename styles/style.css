@@ -7,10 +7,19 @@
 }
 
 
+:root {
+    --cor-fundo-primaria:#103444;
+    --cor-fundo-secundaria:#F6F1F1;
+    --cor-fundo-terciaria:#8bbdd3;
+
+    --font-primaria:'Montserrat' , sans-serif;
+    --font-secundaria: 'Krona One', sans-serif;
+}
+
 body {
     box-sizing:border-box;
-    background-color:#000000;
-    color:#F6F6F6;
+    background-color:var(--cor-fundo-primaria);
+    color:var(--cor-fundo-secundaria);
 }
 
 .cabecalho{
@@ -23,10 +32,10 @@ body {
 }
 
 .cabecalho_link{
-    font-family: 'Montserrat' , sans-serif;
-    font-size: 24px;
+    font-family: var(--font-primaria);
+    font-size: 1.5rem;
     font-weight: 600;
-    color:#22D4FD;
+    color:var(--cor-fundo-terciaria);
     text-decoration: none;
 }
 
@@ -38,25 +47,25 @@ body {
 }
 
 .apresentacao__conteudo{
-    width:615px;
+    width:50%;
     display: flex;
     flex-direction: column;
     gap:40px;
 }
 
 .apresentacao__conteudo__titulo{
-    font-size:36px;
-    font-family: 'Krona One', sans-serif;
+    font-size:2.25rem;
+    font-family: var(--font-secundaria);
 }
 
 .titulo-destaque{
-    color:#22D4FD;
+    color:var(--cor-fundo-terciaria);
 }
 
 
 .apresentacao__conteudo__texto{
-    font-size:24px;
-    font-family: 'Montserrat', sans-serif;
+    font-size:1.5rem;
+    font-family: var(--font-primaria);
 }
 
 .apresentacao__links{
@@ -69,7 +78,7 @@ body {
 
 
 .apresentacao__links__subtitulo{
-    font-family: 'Krona One', sans-serif;
+    font-family: var(--font-secundaria);
     font-weight: 400;
     font-size: 24px;
 }
@@ -79,15 +88,15 @@ body {
     display: flex;
     justify-content: center ;
     gap:10px;
-    border: 2px solid #22d4fd;
-    width: 378px;
+    border: 2px solid var(--cor-fundo-terciaria);
+    width: 50%;
     text-align: center;
     border-radius:8px;
     font-size: 24px;
     padding: 21.5px 0;
-    color: #F6F6F6;
+    color: var(--cor-fundo-secundaria);
     text-decoration:none;
-    font-family:'Montserrat', sans-serif;
+    font-family:var(--font-primaria);
     font-weight: 600;
 }
 
@@ -95,13 +104,17 @@ body {
     background: #272727;
 }
 
+.imagem{
+    width: 50%;
+}
+
 .rodape{
     color:#000000;
-    background:#22D4FD;
-    padding: 24px;
+    background:var(--cor-fundo-terciaria);
+    padding: 1.5rem;
     text-align:center;
-    font-family:'Montserrat', sans-serif;
-    font-size:24px;
+    font-family:var(--font-primaria);
+    font-size:1.5rem;
     width: 400;
 }
 
